@@ -4,6 +4,17 @@
 var maleName = prompt("Enter Male Name");
 var femaleName = prompt("Enter Female Name");
 
-var n = Math.random()
-n = Math.floor(n * 100);
-alert("The lovescore between " + maleName + " and " + femaleName + " is " + n);
+var loveScore = Math.random()
+loveScore = Math.floor((loveScore * 100) + 1);
+
+if (loveScore >= 100) {
+    alert(maleName + " and " + femaleName + " are a perfect match with a 100% lovescore");
+}
+else if (loveScore < 49) {
+    alert(maleName + " and " + femaleName + " are not meant for each other with a " + loveScore + "% lovescore");
+}
+else if (loveScore > 69) {
+    alert(maleName + " and " + femaleName + " are a match with a " + loveScore + "% lovescore");
+}
+
+
