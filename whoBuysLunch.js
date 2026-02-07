@@ -5,8 +5,6 @@
 // ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
 // Michael is going to buy lunch today!
 
-var names = ["Mighty", "Femi", "Foley", "Stephen", "Francis"];
-
 function whosPaying(names){
     var randomNum = Math.floor(Math.random() * names.length);
     return names[randomNum] + " is going to buy lunch today!";
